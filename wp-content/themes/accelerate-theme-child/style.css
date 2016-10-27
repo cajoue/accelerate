@@ -18,15 +18,54 @@
 }
 
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
 .button {
-    background: none repeat scroll 0 0 #45ac9d;
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
+/* featured work on homepage */
+
+.featured-work {
+  overflow:auto;
+}
+
+.featured-work h4 {
+  font-variant: 'Montserrat';
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featured-work ul {
+  margin:0;
+}
+
+.individual-featured-work {
+    float: left;
+    list-style-type: none;
+    margin: 0 3% 0 0;
+    width: 31%;
+}
+
+.individual-featured-work h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.individual-featured-work:nth-child(3n) {
+    margin: 0;
+    width: 31%;
+}
 
 /* blog post on homepage */
+
+.recent-posts {
+  margin-top: 100px;
+}
 
 .blog-post {
   width: 50%;
