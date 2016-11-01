@@ -13,6 +13,7 @@
 @import url("../accelerate-theme/style.css");
 
 /* Homepage Styles */
+
 .home-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -25,37 +26,42 @@
   background: none repeat scroll 0 0 #45ac9d;
 }
 
+
 /* Nav menu */
+
+
 /* painfully elicited via inspection! */
-.primary-navigation ul li{
+
+.primary-navigation ul li {
   text-transform: uppercase;
   display: inline-block;
   padding: 0 20px;
   /*background-color: red;*/
 }
 
+
 /* featured work on homepage */
 
 .featured-work {
-  overflow:auto;
+  overflow: auto;
 }
 
 .featured-work h4 {
   font-variant: 'Montserrat';
   text-transform: uppercase;
   text-align: center;
-  margin:0 0 40px;
+  margin: 0 0 40px;
 }
 
 .featured-work ul {
-  margin:0;
+  margin: 0;
 }
 
 .individual-featured-work {
-    float: left;
-    list-style-type: none;
-    margin: 0 3% 0 0;
-    width: 31%;
+  float: left;
+  list-style-type: none;
+  margin: 0 3% 0 0;
+  width: 31%;
 }
 
 .individual-featured-work h3 {
@@ -66,9 +72,10 @@
 }
 
 .individual-featured-work:nth-child(3n) {
-    margin: 0;
-    width: 31%;
+  margin: 0;
+  width: 31%;
 }
+
 
 /* blog post on homepage */
 
@@ -103,6 +110,7 @@
   font-weight: 700;
 }
 
+
 /* case studies */
 
 article.case-study {
@@ -120,14 +128,14 @@ aside.case-study-sidebar {
 .case-study-sidebar h5 {
   color: #a6a6a6;
   font-size: 14px;
-  font-weight:normal;
+  font-weight: normal;
   margin: 0 0 12px;
   line-height: 1.33333;
 }
 
 .case-study-sidebar h6 {
   font-size: 16px;
-  font-weight:normal;
+  font-weight: normal;
   margin: 0 0 50px;
   line-height: 1.5;
 }
@@ -152,4 +160,38 @@ img.attachment-full.size-full {
 }
 
 
+/* contact form */
 
+div.nf-form-cont {
+  width: 614px;
+  margin: 48pt auto;
+}
+
+.nf-field-container.textbox-container.label-above {
+  width: 49%;
+  float: left;
+  clear: initial;
+  margin-right: 2%;
+}
+
+.nf-field-container.email-container.label-above {
+  width: 49%;
+  float: left;
+  clear: initial;
+}
+
+.nf-field .nf-field-label label {
+  font-weight: normal;
+  font-size: smaller;
+}
+
+/* button */
+input#nf-field-4 {
+    background-color: #45ac9d;
+    float: right;
+    color: white;
+    font-family: "montserrat";
+    font-size: 1em;
+    padding: 12px 60px;
+    text-align: center;
+}
