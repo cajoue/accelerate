@@ -106,14 +106,15 @@
 /* case studies */
 
 article.case-study {
+  width: 900px;
   clear: both;
-  margin: 40px 0 0;
+  margin: 40px auto 0;
 }
 
 aside.case-study-sidebar {
   float: left;
   width: 314px;
-  margin: 0 40px 0 0;
+  margin: 0 70px 0 0;
 }
 
 .case-study-sidebar h5 {
@@ -137,7 +138,7 @@ aside.case-study-sidebar {
 
 .case-study-images {
   float: left;
-  max-width: 606px;
+  width: 516px;
 }
 
 .case-study-images img {
@@ -145,6 +146,10 @@ aside.case-study-sidebar {
   margin-bottom: 100px;
 }
 
+img.attachment-full.size-full {
+  max-width: 516px;
+  height: auto;
+}
 
 
 
