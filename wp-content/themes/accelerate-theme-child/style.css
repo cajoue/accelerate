@@ -29,7 +29,6 @@
 
 /* Nav menu */
 
-
 /* painfully elicited via inspection! */
 
 .primary-navigation ul li {
@@ -163,7 +162,8 @@ img.attachment-full.size-full {
 /* contact form */
 
 div.nf-form-cont {
-  width: 614px;
+  width: 65%;
+  max-width: 614px;
   margin: 48pt auto;
 }
 
@@ -187,11 +187,38 @@ div.nf-form-cont {
 
 /* button */
 input#nf-field-4 {
-    background-color: #45ac9d;
-    float: right;
-    color: white;
-    font-family: "montserrat";
-    font-size: 1em;
-    padding: 12px 60px;
-    text-align: center;
+  background-color: #45ac9d;
+  float: right;
+  color: white;
+  font-family: "montserrat";
+  font-size: 1em;
+  padding: 12px 60px;
+  text-align: center;
+}
+
+/* about page - modify homepage styles */
+
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
+  height: 140px;
+  margin: 0 0 80px;
+  padding: 80px 0;
+}
+
+.about-hero {
+  text-align:center;
+  width: 580px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.about-hero h2 {
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+.about-hero a {
+  color: #45ac9d;
 }
