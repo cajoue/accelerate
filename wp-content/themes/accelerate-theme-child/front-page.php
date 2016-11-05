@@ -48,7 +48,7 @@ get_header(); ?>
       <?php wp_reset_query(); // return the query object to wp control ?>
 
   </div><!-- .container -->
-</section><!-- .recent-posts -->
+</section><!-- .featured-work -->
 
 <section class="recent-posts">
   <div class="site-content">

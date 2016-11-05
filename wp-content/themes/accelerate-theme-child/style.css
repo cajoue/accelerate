@@ -196,12 +196,12 @@ input#nf-field-4 {
   text-align: center;
 }
 
-/* about page - modify homepage styles */
+/* about page - modified homepage styles */
 
 .about-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
   height: 140px;
-  margin: 0 0 80px;
+  margin: 0 0 60px;
   padding: 80px 0;
 }
 
@@ -219,6 +219,67 @@ input#nf-field-4 {
   line-height: 1.5em;
 }
 
-.about-hero a {
+.about-hero span {
   color: #45ac9d;
+}
+
+.about-services {
+  overflow: auto;
+  text-align: center;
+}
+
+.about-services h4 {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+
+/* Services */
+article.service {
+  width: 83%;
+  margin: 40px auto;
+}
+
+article.service:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.service-content {
+  width: 67%;
+  padding: 5px;
+}
+
+.service-content h2 {
+  line-height: 2.5em;
+  margin: 0;
+}
+
+.service-image {
+  width: 25%;
+  max-width: 216px;
+  height: auto;
+  padding: 5px;
+}
+
+.service-image img {
+  margin-bottom: 10px;
+}
+
+.service:nth-child(odd) .service-image {
+float: left;
+}
+
+.service:nth-child(odd) .service-content {
+float: right;
+}
+
+.service:nth-child(even) .service-image {
+float: right;
+}
+
+.service:nth-child(even) .service-content {
+float: left;
 }
