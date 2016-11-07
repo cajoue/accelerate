@@ -93,11 +93,19 @@
 /* blog post on homepage */
 
 .recent-posts {
-  margin-top: 100px;
+  width: 100%;
+  margin: 100px auto;
+}
+
+.recent-posts:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .blog-post {
-  width: 50%;
+  width: 48%;
+  float: left;
 }
 
 .blog-post h4 {
@@ -116,6 +124,51 @@
 }
 
 .blog-post .read-more-link {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #45ac9d;
+  font-weight: 700;
+}
+
+/* latest tweets on homepage */
+
+aside.widget.PI_SimpleTwitterTweets {
+    font-size: 100%;
+    font-weight: normal;
+    padding: 0;
+}
+
+.widget.PI_SimpleTwitterTweets li {
+  line-height: inherit;
+  list-style: none;
+}
+.single-tweet {
+  width: 48%;
+  float: right;
+}
+
+.single-tweet h4 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #a6a6a6;
+  margin-top: 0;
+}
+
+.single-tweet h3.widget-title {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 36px 0;
+  color: #3b3b3b;
+}
+
+span.stt-em {
+  display: none;
+}
+
+.single-tweet a.follow-link {
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -171,7 +224,6 @@ img.attachment-full.size-full {
   max-width: 516px;
   height: auto;
 }
-
 
 /* contact form */
 

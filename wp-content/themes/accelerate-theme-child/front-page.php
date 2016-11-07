@@ -15,26 +15,23 @@
 get_header(); ?>
 
 <section class="home-page">
-	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
-	</div><!-- .container -->
 </section><!-- .home-page -->
 
-<section class="featured-work">
-  <div class="site-content">
+<div class="site-content">
 
+  <section class="featured-work">
       <h4>Featured Work</h4>
       <ul class="homepage-featured-work">
       <?php query_posts('posts_per_page=3&post_type=case_studies'); // 3 posts type case-studies ?>
         <?php while ( have_posts() ) : the_post(); // the loop
           $size = "medium";
-          $image_1 = get_field ( "image_1" );
-        ?>
+          $image_1 = get_field ( "image_1" );?>
           <!-- loop content here -->
           <li class="individual-featured-work">
             <figure>
@@ -46,12 +43,11 @@ get_header(); ?>
           </li>
         <?php endwhile; // end the loop ?>
       <?php wp_reset_query(); // return the query object to wp control ?>
+  </section><!-- .featured-work -->
 
-  </div><!-- .container -->
-</section><!-- .featured-work -->
+<!-- recent posts includes latest post and latest tweet -->
+  <section class="recent-posts">
 
-<section class="recent-posts">
-  <div class="site-content">
     <div class="blog-post">
       <h4>From the Blog</h4>
       <?php query_posts('posts_per_page=1'); // override the default query object ?>
@@ -63,7 +59,19 @@ get_header(); ?>
         <?php endwhile; // end the loop ?>
       <?php wp_reset_query(); // return the query object to wp control ?>
     </div>
-  </div><!-- .container -->
-</section><!-- .recent-posts -->
+
+    <div class="single-tweet">
+      <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+      <h4>Recent Tweet</h4>
+      <div id="secondary" class="widget-area" role="complementary">
+        <?php dynamic_sidebar( 'sidebar-2' ); ?>
+      </div>
+        <a class="follow-link" href="<?php the_permalink(); ?>">Follow Us <span>&rsaquo;</span></a>
+      <?php endif; ?>
+    </div>
+
+  </section><!-- .recent-posts -->
+
+</div><!-- .site-content -->
 
 <?php get_footer(); ?>
