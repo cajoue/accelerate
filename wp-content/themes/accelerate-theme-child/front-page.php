@@ -61,12 +61,14 @@ get_header(); ?>
     </div>
 
     <div class="single-tweet">
-      <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+      <?php if ( is_active_sidebar( 'sidebar-2' ) ) :
+        $twitter_name = get_field ( "twitter_name" ); ?>
+
       <h4>Recent Tweet</h4>
       <div id="secondary" class="widget-area" role="complementary">
         <?php dynamic_sidebar( 'sidebar-2' ); ?>
       </div>
-        <a class="follow-link" href="<?php the_permalink(); ?>">Follow Us <span>&rsaquo;</span></a>
+        <a class="follow-link" href="https://twitter.com/intent/follow?screen_name=<?php echo $twitter_name; ?>">Follow Us <span>&rsaquo;</span></a>
       <?php endif; ?>
     </div>
 

@@ -104,7 +104,7 @@
 }
 
 .blog-post {
-  width: 48%;
+  width: 47%;
   float: left;
 }
 
@@ -131,7 +131,7 @@
   font-weight: 700;
 }
 
-/* latest tweets on homepage */
+/* homepage sidebar latest tweets */
 
 aside.widget.PI_SimpleTwitterTweets {
     font-size: 100%;
@@ -144,7 +144,7 @@ aside.widget.PI_SimpleTwitterTweets {
   list-style: none;
 }
 .single-tweet {
-  width: 48%;
+  width: 47%;
   float: right;
 }
 
@@ -175,6 +175,76 @@ span.stt-em {
   color: #45ac9d;
   font-weight: 700;
 }
+
+/* SIDEBAR styles */
+
+.sidebar {
+  padding-top: 20px;
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+
+.sidebar .widget {
+  padding: 28px 31px;
+}
+
+div.mc4wp-form-fields label {
+  display: none;
+}
+
+.mc4wp-form-fields p {
+  margin-bottom: 0;
+}
+
+.sidebar .widget_mc4wp_form_widget,
+.sidebar .widget_search {
+  border-bottom: 1px solid #BFBFBF;
+}
+
+div.mc4wp-form-fields input[type="email"],
+.sidebar .widget_search input[type="text"] {
+  border: 1px solid #a6a6a6;
+  width: 200px;
+  height: 36px;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+div.mc4wp-form-fields input[type="submit"],
+.sidebar .widget_search input[type="submit"] {
+  border: 1px solid #a6a6a6;
+  width: 80px;
+  height: 36px;
+  background: #45ac9d;
+  color: #ffffff;
+}
+
+.sidebar .widget_categories {
+  padding: 28px 31px 0 31px;
+}
+
+.sidebar label.screen-reader-text,
+.sidebar .widget_mc4wp_form_widget h2,
+.sidebar .widget_categories h2,
+.sidebar .widget_archive h2 {
+  font: 600 14px 'Open Sans';
+  color: #45ac9d;
+  margin-bottom: 10px;
+}
+
+.sidebar .widget_categories ul li,
+.sidebar .widget_archive ul li {
+  font: 600 14px 'Open Sans';
+  color: #3b3b3b;
+  margin-bottom: 15px;
+}
+.sidebar .widget_categories ul li a,
+.sidebar .widget_archive ul li a {
+  color: #3b3b3b;
+}
+/* end SIDEBAR styles */
 
 
 /* case studies */
