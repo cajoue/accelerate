@@ -346,6 +346,18 @@ input#nf-field-4 {
   text-align: center;
 }
 
+/* success message
+----------------------------------------*/
+.nf-response-msg {
+  text-align: center;
+}
+
+.nf-response-msg h2 {
+  font-family: "montserrat";
+  color: #45ac9d;
+  font-size: 32px;
+}
+
 /* about page - modified homepage styles
 ----------------------------------------*/
 
