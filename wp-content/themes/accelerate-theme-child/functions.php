@@ -25,8 +25,9 @@
  * @since Accelerate Marketing 1.0
  */
 
+// Custom posts with array of settings
+// ----------------------------------------
 function create_custom_post_types() {
-  // unique name for this type of custom post with array of settings
   register_post_type ( 'case_studies',
     array(
       'labels' => array(
@@ -51,8 +52,26 @@ function create_custom_post_types() {
   );
 }
 
+// Active highlighting current menu item
+// ----------------------------------------
+function custom_menu_item_classes($classes = array(), $menu_item = false){
+
+// use this format for removing highlighting from 'wrong parent' ie Blog menu item
+  if((is_singular('case_studies') || is_post_type_archive('case_studies')) && $menu_item->ID == 10) {
+    $classes = array();
+  }
+
+// use this format for adding highlighting to archive and single custom posts ie Work menu item
+  if((is_singular('case_studies') || is_post_type_archive('case_studies')) && $menu_item->ID == 47348) {
+    $classes[] = 'current-menu-item';
+  }
+
+  return $classes;
+}
+
+// Create a new dynamic sidebar
+// ----------------------------------------
 function accelerate_theme_child_widget_init() {
-  // Create a new dynamic sidebar
   register_sidebar( array(
       'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
       'id' => 'sidebar-2',
@@ -66,5 +85,6 @@ function accelerate_theme_child_widget_init() {
 }
 
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+add_filter( 'nav_menu_css_class', 'custom_menu_item_classes', 10, 2 );
 add_action( 'init', 'create_custom_post_types');
 

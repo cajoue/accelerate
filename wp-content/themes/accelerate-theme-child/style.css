@@ -49,9 +49,20 @@
   text-transform: uppercase;
   display: inline-block;
   padding: 0 20px;
-  /*background-color: red;*/
 }
 
+/* Active highlighting current menu item
+----------------------------------------*/
+
+ .current-menu-item  > a {
+  /*background-color: red;*/
+  font-weight: bold;
+}
+
+.current_page_parent > a {
+  /*background-color: blue;*/
+  font-weight: bold;
+}
 
 /* featured work on homepage */
 
