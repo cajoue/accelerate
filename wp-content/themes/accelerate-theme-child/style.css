@@ -12,7 +12,8 @@
 
 @import url("../accelerate-theme/style.css");
 
-/* FONTS 404 */
+/* FONTS 404
+----------------------------------------*/
 @font-face {
     font-family: 'ComicSans';
     src: url('fonts/comic-sans-ms.ttf') format('truetype');
@@ -26,8 +27,8 @@
     font-style: normal;
 }
 
-/* Homepage Styles */
-
+/* Homepage Styles
+----------------------------------------*/
 .home-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -41,7 +42,8 @@
 }
 
 
-/* Nav menu */
+/* Nav menu
+----------------------------------------*/
 
 /* painfully elicited via inspection! */
 
@@ -64,8 +66,8 @@
   font-weight: bold;
 }
 
-/* featured work on homepage */
-
+/* featured work on homepage
+----------------------------------------*/
 .featured-work {
   overflow: auto;
 }
@@ -101,7 +103,8 @@
 }
 
 
-/* blog post on homepage */
+/* blog post on homepage
+----------------------------------------*/
 
 .recent-posts {
   width: 100%;
@@ -142,7 +145,8 @@
   font-weight: 700;
 }
 
-/* homepage sidebar latest tweets */
+/* homepage sidebar latest tweets
+----------------------------------------*/
 
 aside.widget.PI_SimpleTwitterTweets {
     font-size: 100%;
@@ -187,7 +191,8 @@ span.stt-em {
   font-weight: 700;
 }
 
-/* SIDEBAR styles */
+/* SIDEBAR styles
+----------------------------------------*/
 
 .sidebar {
   padding-top: 20px;
@@ -199,10 +204,6 @@ span.stt-em {
 
 .sidebar .widget {
   padding: 28px 31px;
-}
-
-div.mc4wp-form-fields label {
-  display: none;
 }
 
 .mc4wp-form-fields p {
@@ -258,7 +259,8 @@ div.mc4wp-form-fields input[type="submit"],
 /* end SIDEBAR styles */
 
 
-/* case studies */
+/* case studies
+----------------------------------------*/
 
 article.case-study {
   width: 900px;
@@ -306,7 +308,8 @@ img.attachment-full.size-full {
   height: auto;
 }
 
-/* contact form */
+/* contact form
+----------------------------------------*/
 
 div.nf-form-cont {
   width: 65%;
@@ -343,7 +346,8 @@ input#nf-field-4 {
   text-align: center;
 }
 
-/* about page - modified homepage styles */
+/* about page - modified homepage styles
+----------------------------------------*/
 
 .about-hero {
   background: url("img/taxi-photo.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
@@ -399,7 +403,8 @@ input#nf-field-4 {
   padding: 15px 75px;
 }
 
-/* Services */
+/* Services
+----------------------------------------*/
 article.service {
   width: 83%;
   margin: 40px auto;
@@ -448,7 +453,8 @@ float: right;
 float: left;
 }
 
-/* 404 page with animation */
+/* 404 page with animation
+----------------------------------------*/
 .comic-hero {
   width: 100%;
   background-color: whitesmoke;
