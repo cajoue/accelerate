@@ -27,20 +27,50 @@
     font-style: normal;
 }
 
-/* Homepage Styles
-----------------------------------------*/
-.home-page {
-  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+/* Float Clearing
+--------------------------------------------- */
+
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+
+/* Site Containers
+--------------------------------------------- */
+.site {
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header-main,
+.site-content,
+.site-footer {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main-content {
+  padding: 55px 4% 0;
+  width: 63%;
+}
+
+aside.sidebar {
+  width: 28%;
 }
 
 #masthead {
   background: none repeat scroll 0 0 #45ac9d;
 }
-
-.button {
-  background: none repeat scroll 0 0 #45ac9d;
-}
-
 
 /* Nav menu
 ----------------------------------------*/
@@ -53,17 +83,20 @@
   padding: 0 20px;
 }
 
-/* Active highlighting current menu item
-----------------------------------------*/
-
- .current-menu-item  > a {
-  /*background-color: red;*/
+/* Active highlighting current menu item */
+.current_page_parent > a,
+.current-menu-item > a {
   font-weight: bold;
 }
 
-.current_page_parent > a {
-  /*background-color: blue;*/
-  font-weight: bold;
+/* Homepage Styles
+----------------------------------------*/
+.home-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+.button {
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
 /* featured work on homepage
@@ -263,15 +296,17 @@ div.mc4wp-form-fields input[type="submit"],
 ----------------------------------------*/
 
 article.case-study {
-  width: 900px;
+  /*width: 900px;*/
+  width: 100%;
   clear: both;
   margin: 40px auto 0;
 }
 
 aside.case-study-sidebar {
   float: left;
-  width: 314px;
-  margin: 0 70px 0 0;
+  /*width: 314px;*/
+  width: 35%;
+  margin: 0 5% 0 0;
 }
 
 .case-study-sidebar h5 {
@@ -295,15 +330,18 @@ aside.case-study-sidebar {
 
 .case-study-images {
   float: left;
-  width: 516px;
+  /*width: 516px;*/
+  width: 60%;
 }
 
 .case-study-images img {
   border: 1px solid #dddddd;
   margin-bottom: 100px;
+  max-width: 100%;
 }
 
 img.attachment-full.size-full {
+  width: 100%;
   max-width: 516px;
   height: auto;
 }
